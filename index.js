@@ -9,12 +9,13 @@ OP.get("/", (request , response) =>{
 
 });
 
-OP.get("/books",(req, res) =>{
-return res.json({book: Database.books});
-});
 OP.get("/publication",(req, res) =>{
     return res.json({book: Database.publication});
     });
+OP.get("/books",(req, res) =>{
+return res.json({book: Database.books});
+});
+
 
  OP.listen(4000 , () => 
  console.log("server is running")
